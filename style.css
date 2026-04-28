@@ -1,0 +1,299 @@
+:root {
+  --primary: #004f7a;
+  --secondary: #f49b2f;
+  --accent: #2fafA2;
+  --bg: #f5f7fa;
+  --text: #222222;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top bar */
+
+.top-bar {
+  background: #022b40;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.top-links a {
+  color: var(--white);
+  margin-left: 1rem;
+}
+
+/* Header */
+
+.main-header {
+  background: var(--white);
+  border-bottom: 1px solid #dde3ec;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--primary);
+  letter-spacing: 0.03em;
+}
+
+nav a {
+  margin: 0 0.6rem;
+  font-weight: 500;
+  font-size: 0.98rem;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(135deg, #e4f0fa, #fff4e6);
+  padding: 3.2rem 0 3.6rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #03324a;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  max-width: 32rem;
+}
+
+.hero-actions {
+  margin-top: 1.6rem;
+}
+
+.hero-actions .btn {
+  margin-right: 0.8rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 1.3rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+/* Sections */
+
+section {
+  padding: 3rem 0;
+}
+
+section h2 {
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #03324a;
+}
+
+/* Cards */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 1.4rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+/* About */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.values {
+  display: grid;
+  gap: 1rem;
+}
+
+.value {
+  background: var(--white);
+  border-radius: 0.9rem;
+  padding: 1rem;
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Services */
+
+.services {
+  background: var(--bg);
+}
+
+/* NDIS */
+
+.ndis {
+  background: var(--white);
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.steps li {
+  margin-bottom: 0.6rem;
+}
+
+/* Testimonials */
+
+.testimonials {
+  background: #eef3f9;
+}
+
+/* CTA band */
+
+.cta-band {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-band .btn-primary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #222222;
+}
+
+/* Footer */
+
+.footer {
+  background: #022b40;
+  color: var(--white);
+  padding-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer a {
+  color: #d7e6f5;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.8rem 0 1.2rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.2rem 0.4rem;
+  }
+
+  .main-header .btn-outline {
+    margin-left: auto;
+  }
+}

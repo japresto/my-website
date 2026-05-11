@@ -504,7 +504,8 @@
             <div id="success-message" class="success-message">
                 Thank you for your message! We'll get back to you soon.
             </div>
-            <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="443a808c-0e67-4b13-82f8-0c603a718b94">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" class="form-control" required>
@@ -513,14 +514,14 @@
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" class="form-control" required>
                 </div>
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" class="form-control" required>
-                </div>
+                </div>-->
                 <div class="form-group">
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" class="form-control" required></textarea>
